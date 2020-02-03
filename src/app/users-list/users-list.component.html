@@ -1,0 +1,15 @@
+<div class="nav">
+  <button class="btn" routerLink='add'>Add new user</button>
+</div>
+<div id="users-container">
+  <div class="users-list">
+    <ul class="users">
+      <li *ngFor=" let user of users" [routerLink]=[user.id] routerLinkActive="active-link">
+        <span class=" badge">{{user.id}}</span> {{user.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="user-info-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -3,16 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './services/data.service';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { AddUserFormComponent } from './add-user-form/add-user-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersListComponent,
+    UserInfoComponent,
+    AddUserFormComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
+
   ],
-  providers: [],
+  providers: [HttpClientModule, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

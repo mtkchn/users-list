@@ -1,0 +1,90 @@
+/* usersComponent's private CSS styles */
+#users-container {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.users-list {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.btn {
+  margin: 1em 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: inherit;
+  border: 2px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}
+
+.user-info-container {
+  width: 50%;
+  min-width: 400px;
+  margin: 0 1em;
+}
+
+.users {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  min-width: 15em;
+}
+
+.users li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #303030;
+  color: #888;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.users li:hover {
+  background-color: #444;
+  left: 0.1em;
+}
+
+.active-link {
+  color: #fff !important;
+}
+
+.users .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+
+@media (max-width: 720px) {
+  #users-container {
+    flex-direction: column;
+  }
+
+  .users-list {
+    width: 100%;
+  }
+
+  .user-info-container {
+    width: 100%;
+  }
+}
