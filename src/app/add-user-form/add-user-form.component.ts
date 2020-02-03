@@ -19,7 +19,6 @@ export class AddUserFormComponent implements OnInit {
     private fb: FormBuilder) { }
 
   onSubmit() {
-    console.log(this.userForm.value);
     this.ds.addNewUser(this.userForm.value);
     this.router.navigate(['/users']);
   }

@@ -19,7 +19,6 @@ export class DataService {
   }
 
   addNewUser(user) {
-    console.log('USERS.length', USERS.length);
     user.id = USERS.length + 2;
     USERS.push(user);
   }

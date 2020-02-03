@@ -86,5 +86,7 @@
 
   .user-info-container {
     width: 100%;
+    min-width: 0px;
+    margin: 0;
   }
 }
