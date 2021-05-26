@@ -9,6 +9,7 @@ import { DataService } from './services/data.service';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { AddUserFormComponent } from './add-user-form/add-user-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TestGitComponent } from './test-git/test-git.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     UsersListComponent,
     UserInfoComponent,
     AddUserFormComponent,
+    TestGitComponent,
 
   ],
   imports: [
